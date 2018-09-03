@@ -27,3 +27,5 @@ Route::get('/facebook', function (){
 Route::get('/instagram', function (){
     return view('instagram');
 })->name('instagram');
+
+Route::resource('rede-social','RedeSocialController');

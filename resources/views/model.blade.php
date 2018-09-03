@@ -10,9 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Adicionar CSS Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-theme.min.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
+
+    @yield('js')
+
 
 </head>
 <body>
