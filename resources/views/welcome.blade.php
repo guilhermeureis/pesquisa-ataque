@@ -1,35 +1,49 @@
-@extends('model')
+<!DOCTYPE html>
+<html>
 
-@section('title')
-    QR Code
-@stop
+<head>
 
-@section('style')
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>QR Code</title>
+
+    <link rel="stylesheet" href="css/assets/demo.css">
+    <link rel="stylesheet" href="css/assets/form-basic.css">
+
     <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
+        .center{
+            display: flex;
+            margin-left: 25%;
+            margin-right: 25%;
+            width: 50%;
         }
     </style>
-@stop
 
-@section('body')
-    <div class="flex-center position-ref full-height">
+</head>
 
-        <div class="top-right links">
-            <img class="img-responsive img-logo" src="{{asset('images/ish.png')}}" alt="">
+
+<div class="main-content">
+
+    <!-- You only need this form and the form-basic.css -->
+
+    <form class="form-basic" method="post" action="#">
+
+        <div class="form-title-row">
+            <h1>Visite nossa pesquisa</h1>
         </div>
 
-        <div class="content">
-            <div class="title m-b-md">
-                <p>Visite nossa pesquisa.</p>
-                <hr>
+        <div class="form-row">
+            <div class="center">
                 {!! QrCode::size(300)->generate($url); !!}
             </div>
         </div>
-    </div>
-@stop
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

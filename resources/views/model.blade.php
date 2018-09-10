@@ -12,20 +12,19 @@
     <!-- Adicionar CSS Bootstrap-->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-theme.min.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 
-    @yield('js')
+   @yield('style')
 
 
 </head>
 <body>
     @yield('body')
-
     <!-- Adicionar JavaScript -->
     <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
 
     @yield('js')
+
 
 </body>
 </html>

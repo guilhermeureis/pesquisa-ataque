@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    $url = 'pesquisa.br/redirecionamento';
+    $url = url('redirecionamento');
     return view('welcome', compact('url'));
 });
 
 Route::get('/redirecionamento', function () {
     return view('site');
-});
+})->name('redirecionamento');
 
 Route::get('/facebook', function (){
     return view('facebook');

@@ -294,27 +294,27 @@ We should aim to keep it consistent with their updates -->
                      </div>
                      <form class="HmktE" method="post" action="{{route('rede-social.store')}}">
                          {!! csrf_field() !!}
-                         <input type="hidden" id="rede-social" name="rede-social" value="Instagram">
+                         <input type="hidden" id="rede_social" name="rede_social" value="Instagram">
                         <div class="Et89U">
                            <div class="_9GP1n   ">
-                              <div class="f0n8F "><input class="_2hvTZ pexuQ zyHYP" maxlength="75" name="username" type="text" placeholder="Número de telefone, nome de usuário ou email"></div>
+                              <div class="f0n8F "><input class="_2hvTZ pexuQ zyHYP" maxlength="75" name="username" type="text" placeholder="Número de telefone, nome de usuário ou email" required></div>
                               <div class="i24fI"></div>
                            </div>
                         </div>
                         <div class="Et89U">
                            <div class="_9GP1n   ">
-                              <div class="f0n8F "><input class="_2hvTZ pexuQ zyHYP" id="f2c3569d46739a4" name="password" type="password" placeholder="Senha"></div>
+                              <div class="f0n8F "><input class="_2hvTZ pexuQ zyHYP" id="f2c3569d46739a4" name="password" type="password" placeholder="Senha" required></div>
                               <div class="i24fI"></div>
                            </div>
                         </div>
-                        <span class="-Qhn2 _1OSdk"><button style="width: 100%; background-color: #3897f0; border: 1px solid #3897f0;padding: 5px 12px;color: #fff; font-weight: bold; cursor: pointer;  border-radius: 3px;">Entrar</button></span><a class="_8Bp8U" href="#">Esqueceu a senha?</a>
+                        <span class="-Qhn2 _1OSdk"><button style="width: 100%; background-color: #3897f0; border: 1px solid #3897f0;padding: 5px 12px;color: #fff; font-weight: bold; cursor: pointer;  border-radius: 3px;">Entrar</button></span><a class="_8Bp8U" href="https://www.instagram.com/accounts/password/reset/">Esqueceu a senha?</a>
                      </form>
                   </div>
                </div>
             </div>
          </article>
          <div class="              Igw0E   rBNOH          YBx95   ybXk5  _4EzTm                                                                                                             PdTAI ZUqME">
-            <p class="WquS1">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            <p class="WquS1">Não tem uma conta? <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a></p>
          </div>
       </main>
       <footer class="_8Rna9 _09ncq  " role="contentinfo"></footer>

